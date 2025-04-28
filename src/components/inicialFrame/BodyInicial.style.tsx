@@ -1,5 +1,8 @@
 import React from 'react';
-import { Container, LabelTitulo, Card, ContainerCard, Body } from './styled';
+import { Container, LabelTitulo, Card, ContainerCard, Body, CardHover } from './styled';
+// import {iconGestao} from '.../assets/iconGestao.png';
+// import {iconRobotica} from '.../assets/iconRobotica.png';
+// import {iconSuporte} from '.../assets/iconSuporte.png';
 
 
 function BodyInicial() {
@@ -9,15 +12,15 @@ function BodyInicial() {
 
     <Container >
       <a href="gestao.html" className={Card}>
-        <img src="icon_gestao.png" alt="Gestão de Sistemas" />
+        <img src="iconGestao.png" alt="Gestão de Sistemas" />
         <ContainerCard>Gestão de Sistemas</ContainerCard>
       </a>
-      <a href="suporte.html" className={Card}>
-        <img src="./assets/icon_suporte.png" alt="Suporte Técnico" />
+      <a href="suporte.html" className={CardHover}>
+        <img src="iconSuporte.png" alt="Suporte Técnico" />
         <ContainerCard>Suporte Técnico</ContainerCard>
       </a>
       <a href="robotica.html" className={Card}>
-        <img src="icon_robotica.png" alt="Adm Robótica" />
+        <img src="iconRobotica.png" alt="Adm Robótica" />
         <ContainerCard>Adm Robótica</ContainerCard>
       </a>
     </Container>

@@ -5,7 +5,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 .App {
   text-align: center;
-  background-color: white;
 }
 
 * {
