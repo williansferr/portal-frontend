@@ -8,7 +8,7 @@ export const BoxSizing = styled.div`
     `
 
 // body
-export const Body = styled.body`
+export const DivMain = styled.div`
 
       font-family: 'Segoe UI', sans-serif;
       min-height: 100vh;
@@ -95,7 +95,6 @@ export const CardHoverImg = styled.div`
 export const CardSpan = styled.div`
       font-size: 1.1em;
       font-weight: bold;
-      background-color: red;
     `
 
 

@@ -1,31 +1,41 @@
 import React from 'react';
-import { Container, LabelTitulo, Card, ContainerCard, Body, CardHover } from './styled';
-// import {iconGestao} from '.../assets/iconGestao.png';
-// import {iconRobotica} from '.../assets/iconRobotica.png';
-// import {iconSuporte} from '.../assets/iconSuporte.png';
+import { Container, LabelTitulo, Card, ContainerCard, DivMain, CardHover, CardSpan } from './styled';
+import iconGestao from '../../assets/iconGestao.png';
+import iconRobotica from '../../assets/iconRobotica.png';
+import iconSuporte from '../../assets/iconSuporte.png';
+
 
 
 function BodyInicial() {
-  return(
-  <Body>
-    <LabelTitulo>Selecione uma Coordenação:</LabelTitulo>
+  return (
+    <DivMain>
+      <LabelTitulo>Selecione uma Coordenação:</LabelTitulo>
 
-    <Container >
-      <a href="gestao.html" className={Card}>
-        <img src="iconGestao.png" alt="Gestão de Sistemas" />
-        <ContainerCard>Gestão de Sistemas</ContainerCard>
-      </a>
-      <a href="suporte.html" className={CardHover}>
-        <img src="iconSuporte.png" alt="Suporte Técnico" />
-        <ContainerCard>Suporte Técnico</ContainerCard>
-      </a>
-      <a href="robotica.html" className={Card}>
-        <img src="iconRobotica.png" alt="Adm Robótica" />
-        <ContainerCard>Adm Robótica</ContainerCard>
-      </a>
-    </Container>
+      <Container >
+        <a href="gestao.html" className={CardHover}>
+          <ContainerCard>
+            <img src={iconGestao} alt="Gestão de Sistemas" width={60} height={60} />
+            <CardSpan>Gestão de Sistemas</CardSpan>
+          </ContainerCard>
+        </a>
 
-  </Body>
+        <a href="suporte.html" className={CardHover}>
+          <ContainerCard>
+            <img src={iconRobotica} alt="Suporte Técnico" width={60} height={60} />
+            <CardSpan>Suporte Técnico</CardSpan>
+            
+          </ContainerCard>
+        </a>
+        <a href="robotica.html" className={Card}>
+          <ContainerCard>
+            <img src={iconSuporte} alt="Adm Robótica" width={60} height={60} />
+            <CardSpan>Adm Robótica</CardSpan>
+            
+          </ContainerCard>
+        </a>
+      </Container>
+
+    </DivMain>
   );
 }
 
