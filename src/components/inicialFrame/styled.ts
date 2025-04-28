@@ -8,7 +8,7 @@ export const BoxSizing = styled.div`
     `
 
 // body
-export const Body = styled.body`
+export const InicialFrame = styled.div`
 
       font-family: 'Segoe UI', sans-serif;
       min-height: 100vh;
@@ -50,8 +50,7 @@ export const Container = styled.div`
     `
 
 
-
-// .card
+// .card 
 export const ContainerCard = styled.div`
       background: linear-gradient(to bottom, #1f1f1f, #2c2c2c);
       width: 200px;
@@ -69,7 +68,7 @@ export const ContainerCard = styled.div`
       justify-content: center;
     `
 
-// .card:hover 
+// .card:hover - - MOVIMENTA O CONTAINER DEIXANDO ELE MAIOR E COM SOBRA
 export const ContainerCardHover = styled.div`
       transform: scale(1.07);
       box-shadow: 0 0 25px #ffffff20;
@@ -77,7 +76,7 @@ export const ContainerCardHover = styled.div`
     `
 
 // .card img
-export const CardHover = styled.div`
+export const CardHover = styled.img`
       width: 60px;
       height: 60px;
       margin-bottom: 15px;
@@ -86,7 +85,7 @@ export const CardHover = styled.div`
 
 
 
-// .card:hover img
+// .card:hover img - REALIZA UMA ROTAÇÃO DE APENAS 10 GRAUS NOS ICONES
 export const CardHoverImg = styled.div`
       transform: rotate(10deg) scale(1.1);
     `
@@ -98,11 +97,8 @@ export const CardSpan = styled.div`
       background-color: red;
     `
 
-
-
 //   .card {
 export const Card = styled.div`
-      
         width: 90%;
         max-width: 300px;
       `
