@@ -26,3 +26,4 @@
   //     </div>
   //   );
   // };
+export default {};

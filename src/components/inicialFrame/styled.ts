@@ -47,6 +47,7 @@ export const Container = styled.div`
         flex-direction: column;
         align-items: center;
       }
+    }
     `
 
 
@@ -73,12 +74,13 @@ export const ContainerCardHover = styled.div`
       transform: scale(1.07);
       box-shadow: 0 0 25px #ffffff20;
       border-color: #ffffff44;
+      background-color: yellow;
     `
 
 // .card img
-export const CardHover = styled.img`
-      width: 60px;
-      height: 60px;
+export const CardHover = styled.img` // MOVIMENTA A IMAGEM 
+      width: 80px;
+      height: 80px;
       margin-bottom: 15px;
       transition: transform 0.3s;
     `
